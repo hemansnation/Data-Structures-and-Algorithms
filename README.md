@@ -114,7 +114,11 @@ The following list contains common time complexities of algorithms:
 - O ( n log n ) This time complexity often indicates that the algorithm sorts the input, because the time complexity of efficient sorting algorithms is O ( n log n ). Another possibility is that the algorithm uses a data structure where each operation takes O (log n ) time.
 - O ( n^2 ) A quadratic algorithm often contains two nested loops. It is possible to go through all pairs of the input elements in O ( n^2 ) time.
 - O ( n^3 ) A cubic algorithm often contains three nested loops. It is possible to go through all triplets of the input elements in O ( n^3 ) time.
+
+
 - O (2^n ) This time complexity often indicates that the algorithm iterates through all subsets of the input elements. For example, the subsets of {1, 2, 3} are: {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3} and {1, 2, 3}.
 - O ( n !) This time complexity often indicates that the algorithm iterates through all permutations of the input elements. For example, the permutations of {1, 2, 3} are (1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2) and (3, 2, 1).
-- An algorithm is polynomial if its time complexity is at most O ( n k ) where k is a constant. All the above time complexities except O (2 n ) and O ( n !) are polynomial. In practice, the constant k is usually small, and therefore a polynomial time complexity roughly means that the algorithm is efficient. Still, there are many important problems for which no polynomial algorithm is known, i.e., nobody knows how to solve them efficiently. 
+
+
+- An algorithm is polynomial if its time complexity is at most O ( n^k ) where k is a constant. All the above time complexities except O (2^n ) and O ( n!) are polynomial. In practice, the constant k is usually small, and therefore a polynomial time complexity roughly means that the algorithm is efficient. Still, there are many important problems for which no polynomial algorithm is known, i.e., nobody knows how to solve them efficiently. 
 - NP-hard problems are an important set of problems, for which no polynomial algorithm is known
