@@ -60,11 +60,48 @@ for i in range(n):
   # code
  
 for i in range(n):
-
-  for i in range(n):
+  for j in range(n):
       # code
 
 for i in range(n):
   # code
 
 ```
+
+#### Several variables
+
+Sometimes the time complexity depends on several factors. In this case, the time complexity formula contains several variables. 
+
+For example, the time complexity of the following code is O ( n^m ):
+
+```python
+for i in range(n):
+  for j in range(m):
+      # code
+```
+
+#### Recursion
+The time complexity of a recursive function depends on the number of times the function is called and the time complexity of a single call. The total time
+complexity is the product of these values.
+
+The call f ( n ) causes n function calls, and the time complexity of each call is O (1). Thus, the total time complexity is O ( n ).
+```python
+def f(n):
+  if (n == 1) return
+  f(n-1)
+```
+
+In this case each function call generates two other calls, except for n = 1. Let us see what happens when g is called with parameter n .
+
+```python
+def f(n):
+  if (n == 1) return
+  f(n-1)
+  f(n-1)
+
+```
+The time complexity will be:
+1 + 2 + 4 + · · · + 2^(n − 1) = 2^(n − 1) = O (2^n ).
+
+
+
